@@ -1,34 +1,3 @@
-<PP_MOBILE_REDIRECT>
-<script src="//assets.adobedtm.com/aaa02e96e247d36a3d2d74d92bc06944d3c3aaa0/satelliteLib-c17649f5e3bffb4654c02a434bd162866c26dacd.js"></script>
-<script type="text/javascript" src="/SSP Applications/Poppin/SocialMediaLogin2/js/poppinresources.js"></script>
-<style>
-span[id^='custcol8']
-{ 
-display:none; 
-} 
-</style>
-<!--[if IE]>						
-<style>
-#canadaimage{
-position: absolute; 
-left:62% !important;
-top:55% !important;
-}
-#usimage{
-position: relative; 
-left:62% !important; 
-top:50% !important;
-}
-</style>
-<style>
-.home-login1{
-position:relative;
-}
-#homeiframecontainer{
-height:110px;
-}
-</style>
-<![endif]-->
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <link href="/site/pp-files/pp-all-styles.min.css?c=" rel="stylesheet" type="text/css" />
 <PP_EMAILS_STYLESHEET>
@@ -59,7 +28,8 @@ if(countrycode == 'CA' )
 };
 });
 </script>
-<!--[if lt IE 11]><script src="/SSP Applications/Poppin/Header/pp_legacy_browser.js"></script><![endif]-->
+<PP_CANADA_POPUP>
+<!--[if lt IE 10]><script src="/SSP Applications/Poppin/Header/pp_legacy_browser.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="/SSP Applications/Poppin/SocialMediaLogin2/js/json3.min.js"></script><![endif]-->
 <script src="/SSP Applications/Poppin/SocialMediaLogin2/js/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="/SSP Applications/Poppin/SocialMediaLogin2/smoothness/jquery-ui-1.10.3.custom.css" />
