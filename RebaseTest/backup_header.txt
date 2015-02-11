@@ -11,8 +11,8 @@ display:none;
 <style>
 #canadaimage{
 position: absolute; 
-left:72% !important;
-top:50% !important;
+left:62% !important;
+top:55% !important;
 }
 #usimage{
 position: absolute; 
@@ -59,9 +59,7 @@ if(countrycode == 'CA' )
 };
 });
 </script>
-<PP_SOCIAL_MEDIA_ALL>
-<PP_CANADA_POPUP>
-<!--[if lt IE 10]><script src="/SSP Applications/Poppin/Header/pp_legacy_browser.js"></script><![endif]-->
+<!--[if lt IE 11]><script src="/SSP Applications/Poppin/Header/pp_legacy_browser.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="/SSP Applications/Poppin/SocialMediaLogin2/js/json3.min.js"></script><![endif]-->
 <script src="/SSP Applications/Poppin/SocialMediaLogin2/js/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="/SSP Applications/Poppin/SocialMediaLogin2/smoothness/jquery-ui-1.10.3.custom.css" />
