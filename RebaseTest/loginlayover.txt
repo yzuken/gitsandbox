@@ -1,0 +1,99 @@
+<div class="login-login" >
+			<form id="link-social" style="display:none; text-align:center;width:430px;margin:0 auto;">
+				<input type="hidden" name="emaillink" value=""/>
+				<input type="hidden" name="timestamp" value=""/>
+				<input type="hidden" name="UID" value=""/>
+				<input type="hidden" name="signature" value=""/>
+				<h2 style="margin-bottom:40px;font-size: 15px;font-weight: bold;text-align: left;line-height: 20px;">Welcome back! Just go ahead and verify your poppin.com password below and let's be Best Friends Forever!</h2>
+				<fieldset>
+					<label for="Poppin password" style="display:block;">*Password</label>
+					<input id="pwdlink" name="pwdlink" type="password" style="width:180px;"/>
+					<div class="forgot-link"><a style="text-decoration:underline;margin:0;" href="#" onclick="forgotPasswordSocialLink();return false;">Forgot your password?</a></div>
+				</fieldset>
+				<fieldset>
+							<input type="submit" name="linkaccounts" id="linkaccounts" value="Continue" class="orangeBtn" style="margin:0;"/>	
+				</fieldset>	
+			</form>
+			<form id="twitter-email" style="display:none;">
+				<input type="hidden" name="customername" value=""/>
+				<input type="hidden" name="timestamp" value=""/>
+				<input type="hidden" name="UID" value=""/>
+				<input type="hidden" name="signature" value=""/>
+				<fieldset>
+					<label for="emailtwitter">Please provide your email address, unfortunately twitter service doesnt provide one.</label>
+					<input id="emailtwitter" name="emailtwitter" type="text" style="width:300px;margin-top:15px;" />
+				</fieldset>
+				<fieldset>
+							<input type="submit" name="register" id="register" value="Continue" class="orangeBtn" style="margin:0;"/>	
+							<a href="#" onclick="switchview('login');">Go back</a>	
+				</fieldset>
+			</form>
+			<div class="login-case-block" >
+				<div class="returning" >
+					<h3>RETURNING CUSTOMERS</h3>
+					<form id="loginform" action="LoginService.ss">
+						<fieldset style="display:none;">
+						<input type="hidden" name="checkout" value=""/>
+						<input type='hidden' name='viewHint' value='F'/>
+						<input type='hidden' name='forgotPasswd' value='F'/>
+						</fieldset>
+						<fieldset>
+							<label for="email">Email</label>
+							<div style="position: relative;"><input id="emaillog" name="email" type="text" onchange="resetLoginCookie();"/></div>
+						</fieldset>
+						<fieldset>
+							<label for="pass">Password</label>
+							<div style="position: relative;"><input id="password" name="password" type="password"/></div>
+						</fieldset>
+						<fieldset>
+							<div class="forgot-link"><a style="text-decoration:underline;margin:0;" href="#" onclick="forgotPasswordOld();return false;">Forgot password?</a></div>
+							<input type="submit" value="continue" class="orangeBtn" name="login" id="login" style="font-family: 'arial'; float: left;border-width: 1px; border-style: solid; background: linear-gradient( -90deg, #c9dd1a, #b6d00d); background: -webkit-linear-gradient( -90deg, #c9dd1a, #b6d00d); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); width: 180px; height: 25px; font-size: 15px; border-radius: 8px;" />
+						</fieldset>
+						<fieldset>
+							<input id="remember" name="remember" type="checkbox"checked /><label class="checkLbl" for="pass">Remember Me</label>
+						</fieldset>
+					</form>
+				</div>
+				<div class="verticalHr">
+					<div class="hr"></div>
+					or
+					<div class="hrlong"></div>
+				</div>
+				<div class="new-customer">
+					<h3>NEW CUSTOMERS</h3>
+					<form id="new-customer-register" action="LoginService.ss">
+						<fieldset>
+							<label for="fname">First Name</label>
+							<div style="position: relative;"><input id="fname" name="fname" type="text"/></div>
+						</fieldset>
+						<fieldset>
+							<label for="lname">Last Name</label>
+							<div style="position: relative;"><input id="lname" name="lname" type="text"/></div>
+						</fieldset>
+						<fieldset style="display: none;">
+							<input id="leadsource" name="leadsource" type="text"/>
+						</fieldset>
+						<fieldset>
+							<label for="email">Email</label>
+							<div style="position: relative;"><input id="emailregnew" name="email" type="text" /></div>
+						</fieldset>
+						<fieldset>
+							<label for="password">Create Password</label>
+							<div style="position: relative;"><input id="passwordnew" name="password" type="password"/></div>
+						</fieldset>
+						<fieldset id="fs_company" style="width: 300px;">
+							<label for="company">Company Name</label>
+							 <input id="company" name="company" placeholder="(Optional)" type="text" style="width: 197px;"/>
+							 <span title="Enter company name here" style="cursor: pointer; font-size: 13px;" id="companyhelp"><img style="margin-bottom:-10px" src="/site/social-login/css/images/whatsthis.jpg"/></span>
+							 <div name="whatthisfortext" id="whatthisfortext" style="display: none;"><p> <PP_LOGIN_WHATTHISFOR_TEXT> </p></div>
+						</fieldset>
+						<fieldset>
+							<input type="submit" value="Continue" class="orangeBtn" name="submit" id="submit" style="font-family: 'arial'; margin: 0px; border-width: 1px; border-style: solid; background: linear-gradient( -90deg, #c9dd1a, #b6d00d); background: -webkit-linear-gradient( -90deg, #c9dd1a, #b6d00d); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); width: 180px; height: 25px; font-size: 15px; border-radius: 8px;"/>
+						</fieldset>
+						<fieldset style="width: 260px;">
+							<input id="subscribe" name="subscribe" type="checkbox" checked />
+							<label class="checkLbl">Yes, please! I'd love to receive emails about new Poppin products, promotions, and sales.</label>
+						</fieldset>
+					</form>
+				</div>
+			</div>
