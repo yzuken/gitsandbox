@@ -15,13 +15,13 @@ left:62% !important;
 top:55% !important;
 }
 #usimage{
-position: absolute; 
+position: relative; 
 left:62% !important; 
 top:50% !important;
 }
 </style>
 <style>
-.home-login{
+.home-login1{
 position:relative;
 }
 #homeiframecontainer{
